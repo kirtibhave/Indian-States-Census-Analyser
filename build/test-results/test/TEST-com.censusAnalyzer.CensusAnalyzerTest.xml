@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.censusAnalyzer.CensusAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-05T06:49:04" hostname="kirts" time="0.313">
+<testsuite name="com.censusAnalyzer.CensusAnalyzerTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2020-04-05T09:45:05" hostname="kirts" time="351.817">
   <properties/>
-  <testcase name="givenIndian_CensusCSVFile_ShouldReturnsExactCountOfRecords" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.313"/>
+  <testcase name="givenIndianCensusData_WithWrongFile_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="351.817">
+    <skipped/>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
