@@ -3,7 +3,7 @@ package com.censusAnalyzer;
 public class CensusAnalyzerException extends Throwable {
 
     public enum ExceptionType{
-        CSV_FILE_PROBLEM;
+        CSV_FILE_PROBLEM,CSV_TEMPLATE_PROBLEM,;
     }
 
     public ExceptionType type;

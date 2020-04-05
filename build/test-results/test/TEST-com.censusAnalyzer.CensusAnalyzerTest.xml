@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.censusAnalyzer.CensusAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-05T15:29:08" hostname="kirts" time="0.126">
+<testsuite name="com.censusAnalyzer.CensusAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-05T20:16:49" hostname="kirts" time="0.164">
   <properties/>
-  <testcase name="givenIndianCensusData_WithWrongFileType_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.126"/>
+  <testcase name="givenIndianCensusData_whenDelimiterIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.164"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

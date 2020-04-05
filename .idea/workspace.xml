@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7dfea4c-a895-4b1a-b4e5-669eaf85ea4f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/IndianStateCensusWrongData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,13 +16,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/CensusAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/CensusAnalyzer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/CensusAnalyzerException$ExceptionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/CensusAnalyzerException$ExceptionType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/CensusAnalyzerException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/CensusAnalyzerException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/censusAnalyzer/CensusAnalyzerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/censusAnalyzer/CensusAnalyzerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.censusAnalyzer.CensusAnalyzerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.censusAnalyzer.CensusAnalyzerTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.censusAnalyzer.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.censusAnalyzer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.censusAnalyzer.CensusAnalyzerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.censusAnalyzer.CensusAnalyzerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/CensusAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/CensusAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/CensusAnalyzerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/CensusAnalyzerException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java" afterDir="false" />
     </list>
@@ -61,7 +62,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1a6pXl1SzDZEm00fksMXmMpbLuW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -69,36 +72,17 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.CensusAnalyzerTest.givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords">
+  <component name="RunManager" selected="Gradle.CensusAnalyzerTest">
     <configuration name="CensusAnalyzerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.censusAnalyzer.CensusAnalyzerTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CensusAnalyzerTest.givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.censusAnalyzer.CensusAnalyzerTest.givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords&quot; --debug" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -153,12 +137,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CensusAnalyzerTest.givenIndianCensusData_WithWrongFile_ShouldThrowException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CensusAnalyzerTest.givenIndianCensusData_whenDelimiterIncorrect_shouldReturnException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.censusAnalyzer.CensusAnalyzerTest.givenIndianCensusData_WithWrongFile_ShouldThrowException&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.censusAnalyzer.CensusAnalyzerTest.givenIndianCensusData_whenDelimiterIncorrect_shouldReturnException&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CensusAnalyzerTest.givenStateCensusCsvFile_whenCsvHeaderIncorrect_shouldReturnException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.censusAnalyzer.CensusAnalyzerTest.givenStateCensusCsvFile_whenCsvHeaderIncorrect_shouldReturnException&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -175,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CensusAnalyzerTest.givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords" />
         <item itemvalue="Gradle.CensusAnalyzerTest" />
         <item itemvalue="Gradle.CensusAnalyzerTest.givenIndianCensusData_WithWrongFileName_ShouldThrowException" />
+        <item itemvalue="Gradle.CensusAnalyzerTest.givenStateCensusCsvFile_whenCsvHeaderIncorrect_shouldReturnException" />
+        <item itemvalue="Gradle.CensusAnalyzerTest.givenIndianCensusData_whenDelimiterIncorrect_shouldReturnException" />
         <item itemvalue="Gradle.CensusAnalyzerTest.givenIndianCensusData_WithWrongFileType_ShouldThrowException" />
-        <item itemvalue="Gradle.CensusAnalyzerTest.givenIndianCensusData_WithWrongFile_ShouldThrowException" />
       </list>
     </recent_temporary>
   </component>
@@ -199,43 +203,50 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="365" key="GridCell.Tab.0.bottom" timestamp="1586100151284">
+    <state width="1323" height="363" key="GridCell.Tab.0.bottom" timestamp="1586117194742">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="365" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586100151284" />
-    <state width="1323" height="365" key="GridCell.Tab.0.center" timestamp="1586100151284">
+    <state width="1323" height="363" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586117194742" />
+    <state width="1323" height="363" key="GridCell.Tab.0.center" timestamp="1586117194742">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="365" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586100151284" />
-    <state width="1323" height="365" key="GridCell.Tab.0.left" timestamp="1586100151284">
+    <state width="1323" height="363" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586117194742" />
+    <state width="1323" height="363" key="GridCell.Tab.0.left" timestamp="1586117194742">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="365" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586100151284" />
-    <state width="1323" height="365" key="GridCell.Tab.0.right" timestamp="1586100151284">
+    <state width="1323" height="363" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586117194742" />
+    <state width="1323" height="363" key="GridCell.Tab.0.right" timestamp="1586117194742">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="365" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586100151284" />
-    <state width="1323" height="222" key="GridCell.Tab.1.bottom" timestamp="1586088174835">
+    <state width="1323" height="363" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586117194742" />
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom" timestamp="1586116349172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586088174835" />
-    <state width="1323" height="222" key="GridCell.Tab.1.center" timestamp="1586088174835">
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586116349172" />
+    <state width="1323" height="222" key="GridCell.Tab.1.center" timestamp="1586116349172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586088174835" />
-    <state width="1323" height="222" key="GridCell.Tab.1.left" timestamp="1586088174835">
+    <state width="1323" height="222" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586116349172" />
+    <state width="1323" height="222" key="GridCell.Tab.1.left" timestamp="1586116349172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586088174835" />
-    <state width="1323" height="222" key="GridCell.Tab.1.right" timestamp="1586088174835">
+    <state width="1323" height="222" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586116349172" />
+    <state width="1323" height="222" key="GridCell.Tab.1.right" timestamp="1586116349172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586088174835" />
-    <state x="73" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1586094190988">
+    <state width="1323" height="222" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586116349172" />
+    <state x="73" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1586100318591">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="73" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586094190988" />
+    <state x="73" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586100318591" />
+    <state x="65" y="0" key="new project wizard" timestamp="1586108854427">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1586108854427" />
     <state x="32" y="175" key="run.anything.popup" timestamp="1586082002869">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -258,6 +269,11 @@
           <line>6</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/censusAnalyzer/CensusAnalyzer.java</url>
           <line>10</line>
@@ -273,6 +289,22 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java</url>
+          <line>24</line>
+          <properties class="com.censusAnalyzer.CensusAnalyzerTest" method="givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java</url>
+          <line>35</line>
+          <properties class="com.censusAnalyzer.CensusAnalyzerTest" method="givenIndianCensusData_WithWrongFileName_ShouldThrowException">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
