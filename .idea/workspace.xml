@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7dfea4c-a895-4b1a-b4e5-669eaf85ea4f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build/resources/test/IndianStateCensusWrongData.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/resources/IndianStateCensusWrongData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -13,6 +14,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/CensusAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/CensusAnalyzer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/CensusAnalyzerException$ExceptionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/CensusAnalyzerException$ExceptionType.class" afterDir="false" />
@@ -76,7 +78,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.CensusAnalyzerTest">
+  <component name="RunManager" selected="Gradle.CensusAnalyzerTest.givenStateCensusCsvFile_whenCsvHeaderIncorrect_shouldReturnException">
     <configuration name="CensusAnalyzerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -179,10 +181,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CensusAnalyzerTest" />
-        <item itemvalue="Gradle.CensusAnalyzerTest.givenIndianCensusData_WithWrongFileName_ShouldThrowException" />
         <item itemvalue="Gradle.CensusAnalyzerTest.givenStateCensusCsvFile_whenCsvHeaderIncorrect_shouldReturnException" />
         <item itemvalue="Gradle.CensusAnalyzerTest.givenIndianCensusData_whenDelimiterIncorrect_shouldReturnException" />
+        <item itemvalue="Gradle.CensusAnalyzerTest" />
+        <item itemvalue="Gradle.CensusAnalyzerTest.givenIndianCensusData_WithWrongFileName_ShouldThrowException" />
         <item itemvalue="Gradle.CensusAnalyzerTest.givenIndianCensusData_WithWrongFileType_ShouldThrowException" />
       </list>
     </recent_temporary>
@@ -207,22 +209,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="363" key="GridCell.Tab.0.bottom" timestamp="1586117194742">
+    <state width="1323" height="363" key="GridCell.Tab.0.bottom" timestamp="1586118361002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="363" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586117194742" />
-    <state width="1323" height="363" key="GridCell.Tab.0.center" timestamp="1586117194742">
+    <state width="1323" height="363" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586118361002" />
+    <state width="1323" height="363" key="GridCell.Tab.0.center" timestamp="1586118361002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="363" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586117194742" />
-    <state width="1323" height="363" key="GridCell.Tab.0.left" timestamp="1586117194742">
+    <state width="1323" height="363" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586118361002" />
+    <state width="1323" height="363" key="GridCell.Tab.0.left" timestamp="1586118361002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="363" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586117194742" />
-    <state width="1323" height="363" key="GridCell.Tab.0.right" timestamp="1586117194742">
+    <state width="1323" height="363" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586118361002" />
+    <state width="1323" height="363" key="GridCell.Tab.0.right" timestamp="1586118361002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="363" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586117194742" />
+    <state width="1323" height="363" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586118361002" />
     <state width="1323" height="222" key="GridCell.Tab.1.bottom" timestamp="1586116349172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
