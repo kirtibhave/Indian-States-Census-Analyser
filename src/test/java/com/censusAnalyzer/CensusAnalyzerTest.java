@@ -1,5 +1,6 @@
 package com.censusAnalyzer;
 
+import com.censusAnalyzer.Service.CensusAnalyzer;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
