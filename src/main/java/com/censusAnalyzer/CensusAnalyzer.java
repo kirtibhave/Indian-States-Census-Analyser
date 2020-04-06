@@ -13,9 +13,7 @@ public class CensusAnalyzer {
         try {
             Reader reader = Files.newBufferedReader(Paths.get(csvFilePath));
             Iterator<IndianCensusCsvPojo> censusCsvIterator = getCsvFileIterator(reader, IndianCensusCsvPojo.class);
-            Iterable<IndianCensusCsvPojo> csvIterable = () -> censusCsvIterator;
-            int numberOfEnteries = (int) StreamSupport.stream(csvIterable.spliterator(), false).count();
-            return numberOfEnteries;
+            return getCount(censusCsvIterator);
         } catch (IOException e) {
             throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.CSV_FILE_PROBLEM, e.getMessage());
         } catch (RuntimeException e) {
@@ -23,18 +21,22 @@ public class CensusAnalyzer {
         }
     }
 
-    public int loadStateCodeData (String csvFilePath) throws CensusAnalyzerException {
+    public int loadStateCodeData(String csvFilePath) throws CensusAnalyzerException {
         try {
             Reader reader = Files.newBufferedReader(Paths.get(csvFilePath));
             Iterator<IndianCensusCsvPojo> censusCsvIterator = getCsvFileIterator(reader, IndianCensusCsvPojo.class);
-            Iterable<IndianCensusCsvPojo> csvIterable = () -> censusCsvIterator;
-            int numberOfEnteries = (int) StreamSupport.stream(csvIterable.spliterator(), false).count();
-            return numberOfEnteries;
+            return getCount(censusCsvIterator);
         } catch (IOException e) {
             throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.CSV_FILE_PROBLEM, e.getMessage());
         } catch (RuntimeException e) {
             throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.CSV_TEMPLATE_PROBLEM, e.getMessage());
         }
+    }
+
+    private <E> int getCount(Iterator<E> iterator) {
+        Iterable<E> csvIterable = () -> iterator;
+        int numberOfEnteries = (int) StreamSupport.stream(csvIterable.spliterator(), false).count();
+        return numberOfEnteries;
     }
 
     private <E > Iterator < E > getCsvFileIterator(Reader reader, Class csvClass) {

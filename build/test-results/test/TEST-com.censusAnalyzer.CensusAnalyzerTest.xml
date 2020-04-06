@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.censusAnalyzer.CensusAnalyzerTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-04-06T11:34:51" hostname="kirts" time="0.914">
+<testsuite name="com.censusAnalyzer.CensusAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-06T12:11:55" hostname="kirts" time="0.168">
   <properties/>
-  <testcase name="givenStateCodeCsvFile_whenCsvHeaderIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.191"/>
-  <testcase name="givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.248"/>
-  <testcase name="givenStateCodeCsvFile_WithWrongFileName_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.002"/>
-  <testcase name="givenStateCodeCsvFile_returnCorrectNumberOfRecord" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.035"/>
-  <testcase name="givenIndianCensusData_WithWrongFileName_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.001"/>
-  <testcase name="givenStateCensusCsvFile_whenCsvHeaderIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.261"/>
-  <testcase name="givenIndianCensusData_whenDelimiterIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.013"/>
-  <testcase name="givenStateCodeCsvFile_WithWrongFileType_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.0"/>
-  <testcase name="givenStateCodeCsvFile_whenDelimiterIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.146"/>
-  <testcase name="givenIndianCensusData_WithWrongFileType_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.005"/>
+  <testcase name="givenStateCodeCsvFile_returnCorrectNumberOfRecord" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.168"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[com.censusAnalyzer.CensusAnalyzerException: Error capturing CSV header!
-	at com.censusAnalyzer.CensusAnalyzer.loadStateCodeData(CensusAnalyzer.java:36)
+	at com.censusAnalyzer.CensusAnalyzer.loadStateCodeData(CensusAnalyzer.java:32)
 	at com.censusAnalyzer.CensusAnalyzerTest.givenStateCodeCsvFile_returnCorrectNumberOfRecord(CensusAnalyzerTest.java:83)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

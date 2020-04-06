@@ -13,8 +13,7 @@ public class CensusAnalyzerTest {
     private static final String WRONG_STATE_CENSUS_CSV_HEADER = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/main/resources/StateCensusData.csv";
 
     private static final String INDIAN_STATE_DATA_FILE_PATH ="C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/main/resources/StateCode.csv";
-    private static final String WRONG_STATE_FILE_PATH =
-            "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/test/resources/StateCode.csv";
+    private static final String WRONG_STATE_FILE_PATH = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/test/resources/StateCode.csv";
     private static final String WRONG_STATE_DATA_FILE_TYPE = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/main/resources/StateCode.html";
     private static final String WRONG_STATE_DATA_FILE_DELIMITER = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/test/resource/WrongStateCodeData.csv";
     private static final String WRONG_STATE_DATA_HEADER = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/main/resources/StateCode.csv";
