@@ -2,6 +2,7 @@ package com.censusAnalyzer;
 
 import com.censusAnalyzer.Exception.CensusAnalyzerException;
 import com.censusAnalyzer.Service.CensusAnalyzer;
+import com.censusAnalyzer.Service.IndianStateCensusCodePojo;
 import com.google.gson.Gson;
 import org.junit.Assert;
 import org.junit.Before;
@@ -131,7 +132,7 @@ public class CensusAnalyzerTest {
     }
 
     @Test
-    public void givenIndiaCensusData_whenSorted_shouldReturnSortedDataStartState() {
+    public void givenIndiaCensusData_whenSorted_shouldReturnSortedDataOfStartState() {
         try {
             censusAnalyzer.loadCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
             String sortedCensusData = censusAnalyzer.getStateWiseSortedCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
@@ -143,12 +144,36 @@ public class CensusAnalyzerTest {
     }
 
     @Test
-    public void givenIndiaCensusData_whenSorted_shouldReturnSortedDataEndState() throws CensusAnalyzerException {
+    public void givenIndiaCensusData_whenSorted_shouldReturnSortedDataOfEndState() {
         try {
             censusAnalyzer.loadCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
             String sortedCensusData = censusAnalyzer.getStateWiseSortedCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
             IndianCensusCsvPojo[] censusCsv = new Gson().fromJson(sortedCensusData, IndianCensusCsvPojo[].class);
             Assert.assertEquals("West Bengal", censusCsv[28].state);
+        } catch (CensusAnalyzerException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void givenIndiaStateCode_whenSorted_shouldReturnSortedDataStartCode() {
+        try {
+            censusAnalyzer.loadCensusData(INDIAN_STATE_DATA_FILE_PATH);
+            String sortedStateCodeData = censusAnalyzer.getStateCodeWiseSortedData(INDIAN_STATE_DATA_FILE_PATH);
+            IndianStateCensusCodePojo[] codeCsv = new Gson().fromJson(sortedStateCodeData, IndianStateCensusCodePojo[].class);
+            Assert.assertEquals("AN", codeCsv[0].stateCode);
+        } catch (CensusAnalyzerException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void givenIndiaStateCode_whenSorted_shouldReturnSortedDataEndCode() {
+        try {
+            censusAnalyzer.loadCensusData(INDIAN_STATE_DATA_FILE_PATH);
+            String sortedStateCodeData = censusAnalyzer.getStateCodeWiseSortedData(INDIAN_STATE_DATA_FILE_PATH);
+            IndianStateCensusCodePojo[] codeCsv = new Gson().fromJson(sortedStateCodeData, IndianStateCensusCodePojo[].class);
+            Assert.assertEquals("WB", codeCsv[36].stateCode);
         } catch (CensusAnalyzerException e) {
             e.printStackTrace();
         }
