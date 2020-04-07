@@ -2,6 +2,7 @@ package com.censusAnalyzer;
 
 import com.censusAnalyzer.Exception.CensusAnalyzerException;
 import com.censusAnalyzer.Service.CensusAnalyzer;
+import com.google.gson.Gson;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,10 +12,10 @@ public class CensusAnalyzerTest {
     private static final String INDIAN_STATE_CENSUS_CSV_PATH = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/main/resources/StateCensusData.csv";
     private static final String WRONG_CSV_FILE_PATH = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/test/resources/StateCensusData.csv";
     private static final String WRONG_CSV_FILE_TYPE = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/main/resources/StateCensusData.java";
-    private static final String WRONG_CSV_DATA_FILE_DELIMITER= "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/test/resource/IndianStateCensusWrongData.csv";
+    private static final String WRONG_CSV_DATA_FILE_DELIMITER = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/test/resource/IndianStateCensusWrongData.csv";
     private static final String WRONG_STATE_CENSUS_CSV_HEADER = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/main/resources/StateCensusData.csv";
 
-    private static final String INDIAN_STATE_DATA_FILE_PATH ="C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/main/resources/StateCode.csv";
+    private static final String INDIAN_STATE_DATA_FILE_PATH = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/main/resources/StateCode.csv";
     private static final String WRONG_STATE_FILE_PATH = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/test/resources/StateCode.csv";
     private static final String WRONG_STATE_DATA_FILE_TYPE = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/main/resources/StateCode.html";
     private static final String WRONG_STATE_DATA_FILE_DELIMITER = "C:/Users/Lenovo/IdeaProjects/IndianCensusAnalyser/src/test/resource/WrongStateCodeData.csv";
@@ -126,6 +127,30 @@ public class CensusAnalyzerTest {
             censusAnalyzer.loadCensusData(WRONG_STATE_DATA_HEADER);
         } catch (CensusAnalyzerException e) {
             Assert.assertEquals(CensusAnalyzerException.ExceptionType.CSV_TEMPLATE_PROBLEM, e.type);
+        }
+    }
+
+    @Test
+    public void givenIndiaCensusData_whenSorted_shouldReturnSortedDataStartState() {
+        try {
+            censusAnalyzer.loadCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
+            String sortedCensusData = censusAnalyzer.getStateWiseSortedCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
+            IndianCensusCsvPojo[] censusCsv = new Gson().fromJson(sortedCensusData, IndianCensusCsvPojo[].class);
+            Assert.assertEquals("Andhra Pradesh", censusCsv[0].state);
+        } catch (CensusAnalyzerException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void givenIndiaCensusData_whenSorted_shouldReturnSortedDataEndState() throws CensusAnalyzerException {
+        try {
+            censusAnalyzer.loadCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
+            String sortedCensusData = censusAnalyzer.getStateWiseSortedCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
+            IndianCensusCsvPojo[] censusCsv = new Gson().fromJson(sortedCensusData, IndianCensusCsvPojo[].class);
+            Assert.assertEquals("West Bengal", censusCsv[28].state);
+        } catch (CensusAnalyzerException e) {
+            e.printStackTrace();
         }
     }
 }
