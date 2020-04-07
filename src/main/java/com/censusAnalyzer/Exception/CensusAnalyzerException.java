@@ -1,4 +1,4 @@
-package com.censusAnalyzer;
+package com.censusAnalyzer.Exception;
 
 public class CensusAnalyzerException extends Throwable {
 

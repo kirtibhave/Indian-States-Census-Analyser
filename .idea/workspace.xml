@@ -2,31 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7dfea4c-a895-4b1a-b4e5-669eaf85ea4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/Builder/CsvBuilderFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/Builder/IcsvBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/Builder/OpenCsvBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/Service/CensusAnalyzer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Builder/CsvBuilderFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Builder/IcsvBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Builder/OpenCsvBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Exception/CsvBuilderException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.censusAnalyzer.CensusAnalyzerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.censusAnalyzer.CensusAnalyzerTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.censusAnalyzer.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.censusAnalyzer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.censusAnalyzer.CensusAnalyzerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.censusAnalyzer.CensusAnalyzerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/CensusAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Service/CensusAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/OpenCsvBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/Builder/CsvBuilderFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/Builder/IcsvBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/Builder/OpenCsvBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/CensusAnalyzer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/CensusAnalyzerException$ExceptionType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/CensusAnalyzerException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/IndianCensusCsvPojo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/OpenCsvBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/censusAnalyzer/Service/CensusAnalyzer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.censusAnalyzer.CensusAnalyzerTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.censusAnalyzer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.censusAnalyzer.CensusAnalyzerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Builder/IcsvBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Builder/IcsvBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Builder/OpenCsvBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Builder/OpenCsvBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/CensusAnalyzerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Exception/CensusAnalyzerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Service/CensusAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Service/CensusAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,9 +195,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.CensusAnalyzerTest" />
+        <item itemvalue="Gradle.CensusAnalyzerTest.givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords" />
         <item itemvalue="Gradle.CensusAnalyzerTest.givenStateCodeCsvFile_whenCsvHeaderIncorrect_shouldReturnException" />
         <item itemvalue="Gradle.CensusAnalyzerTest.givenStateCodeCsvFile_returnCorrectNumberOfRecord" />
-        <item itemvalue="Gradle.CensusAnalyzerTest.givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords" />
         <item itemvalue="Gradle.CensusAnalyzerTest.givenStateCodeCsvFile_WithWrongFileName_ShouldThrowException" />
       </list>
     </recent_temporary>
@@ -217,26 +222,26 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="161" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1586214022601">
+    <state x="161" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1586221071027">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="161" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586214022601" />
-    <state width="1323" height="317" key="GridCell.Tab.0.bottom" timestamp="1586215093862">
+    <state x="161" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586221071027" />
+    <state width="1323" height="317" key="GridCell.Tab.0.bottom" timestamp="1586221658996">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="317" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586215093862" />
-    <state width="1323" height="317" key="GridCell.Tab.0.center" timestamp="1586215093862">
+    <state width="1323" height="317" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586221658996" />
+    <state width="1323" height="317" key="GridCell.Tab.0.center" timestamp="1586221658996">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="317" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586215093862" />
-    <state width="1323" height="317" key="GridCell.Tab.0.left" timestamp="1586215093862">
+    <state width="1323" height="317" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586221658996" />
+    <state width="1323" height="317" key="GridCell.Tab.0.left" timestamp="1586221658996">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="317" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586215093862" />
-    <state width="1323" height="317" key="GridCell.Tab.0.right" timestamp="1586215093862">
+    <state width="1323" height="317" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586221658996" />
+    <state width="1323" height="317" key="GridCell.Tab.0.right" timestamp="1586221658996">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="317" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586215093862" />
+    <state width="1323" height="317" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586221658996" />
     <state width="1323" height="225" key="GridCell.Tab.1.bottom" timestamp="1586172872054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -283,22 +288,22 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java</url>
-          <line>62</line>
+          <line>63</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java</url>
-          <line>82</line>
+          <line>83</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java</url>
-          <line>7</line>
+          <line>8</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -308,7 +313,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java</url>
-          <line>61</line>
+          <line>62</line>
           <properties class="com.censusAnalyzer.CensusAnalyzerTest" method="givenIndianCensusData_whenDelimiterIncorrect_shouldReturnException">
             <option name="EMULATED" value="true" />
           </properties>
@@ -316,7 +321,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java</url>
-          <line>81</line>
+          <line>82</line>
           <properties class="com.censusAnalyzer.CensusAnalyzerTest" method="givenStateCodeCsvFile_returnCorrectNumberOfRecord">
             <option name="EMULATED" value="true" />
           </properties>

@@ -1,6 +1,6 @@
 package com.censusAnalyzer.Service;
 
-import com.censusAnalyzer.CensusAnalyzerException;
+import com.censusAnalyzer.Exception.CensusAnalyzerException;
 import com.censusAnalyzer.IndianCensusCsvPojo;
 import com.censusAnalyzer.Builder.CsvBuilderFactory;
 import com.censusAnalyzer.Builder.IcsvBuilder;
