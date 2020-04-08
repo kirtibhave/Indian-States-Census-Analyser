@@ -1,4 +1,4 @@
-package com.censusAnalyzer;
+package com.censusAnalyzer.DTO;
 
 import com.opencsv.bean.CsvBindByName;
 
@@ -8,13 +8,13 @@ public class IndianCensusCsvPojo {
     public String state;
 
     @CsvBindByName(column = "Population",required = true)
-    private int population;
+    public long population;
 
     @CsvBindByName(column = "AreaInSqKm",required = true)
-    private int areaInSqKm;
+    public long areaInSqKm;
 
     @CsvBindByName(column = "DensityPerSqKm")
-    private int densityPerSqKm;
+    public long densityPerSqKm;
 
     @Override
     public String toString() {

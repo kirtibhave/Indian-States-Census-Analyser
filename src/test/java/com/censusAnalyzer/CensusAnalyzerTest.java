@@ -1,8 +1,9 @@
 package com.censusAnalyzer;
 
+import com.censusAnalyzer.DTO.IndianCensusCsvPojo;
 import com.censusAnalyzer.Exception.CensusAnalyzerException;
 import com.censusAnalyzer.Service.CensusAnalyzer;
-import com.censusAnalyzer.Service.IndianStateCensusCodePojo;
+
 import com.google.gson.Gson;
 import org.junit.Assert;
 import org.junit.Before;
@@ -155,27 +156,4 @@ public class CensusAnalyzerTest {
         }
     }
 
-    @Test
-    public void givenIndiaStateCode_whenSorted_shouldReturnSortedDataStartCode() {
-        try {
-            censusAnalyzer.loadCensusData(INDIAN_STATE_DATA_FILE_PATH);
-            String sortedStateCodeData = censusAnalyzer.getStateCodeWiseSortedData(INDIAN_STATE_DATA_FILE_PATH);
-            IndianStateCensusCodePojo[] codeCsv = new Gson().fromJson(sortedStateCodeData, IndianStateCensusCodePojo[].class);
-            Assert.assertEquals("AN", codeCsv[0].stateCode);
-        } catch (CensusAnalyzerException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public void givenIndiaStateCode_whenSorted_shouldReturnSortedDataEndCode() {
-        try {
-            censusAnalyzer.loadCensusData(INDIAN_STATE_DATA_FILE_PATH);
-            String sortedStateCodeData = censusAnalyzer.getStateCodeWiseSortedData(INDIAN_STATE_DATA_FILE_PATH);
-            IndianStateCensusCodePojo[] codeCsv = new Gson().fromJson(sortedStateCodeData, IndianStateCensusCodePojo[].class);
-            Assert.assertEquals("WB", codeCsv[36].stateCode);
-        } catch (CensusAnalyzerException e) {
-            e.printStackTrace();
-        }
-    }
 }

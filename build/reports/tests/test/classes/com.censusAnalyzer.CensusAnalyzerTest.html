@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">14</div>
+<div class="counter">12</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.975s</div>
+<div class="counter">1.237s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,33 +78,23 @@
 </tr>
 </thead>
 <tr>
-<td class="success">givenIndiaCensusData_whenSorted_shouldReturnSortedDataEndState</td>
-<td class="success">0.141s</td>
+<td class="success">givenIndiaCensusData_whenSorted_shouldReturnSortedDataOfEndState</td>
+<td class="success">0.397s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">givenIndiaCensusData_whenSorted_shouldReturnSortedDataStartState</td>
-<td class="success">0.061s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaStateCode_whenSorted_shouldReturnSortedDataEndCode</td>
-<td class="success">0.009s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaStateCode_whenSorted_shouldReturnSortedDataStartCode</td>
-<td class="success">0.008s</td>
+<td class="success">givenIndiaCensusData_whenSorted_shouldReturnSortedDataOfStartState</td>
+<td class="success">0.224s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords</td>
-<td class="success">0.374s</td>
+<td class="success">0.253s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenIndianCensusData_WithWrongFileName_ShouldThrowException</td>
-<td class="success">0s</td>
+<td class="success">0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -114,37 +104,37 @@
 </tr>
 <tr>
 <td class="success">givenIndianCensusData_whenDelimiterIncorrect_shouldReturnException</td>
-<td class="success">0.004s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenStateCensusCsvFile_whenCsvHeaderIncorrect_shouldReturnException</td>
-<td class="success">0.041s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenStateCodeCsvFile_WithWrongFileName_ShouldThrowException</td>
 <td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">givenStateCensusCsvFile_whenCsvHeaderIncorrect_shouldReturnException</td>
+<td class="success">0.070s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">givenStateCodeCsvFile_WithWrongFileName_ShouldThrowException</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">givenStateCodeCsvFile_WithWrongFileType_ShouldThrowException</td>
-<td class="success">0.001s</td>
+<td class="success">0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenStateCodeCsvFile_returnCorrectNumberOfRecord</td>
-<td class="success">0.024s</td>
+<td class="success">0.126s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenStateCodeCsvFile_whenCsvHeaderIncorrect_shouldReturnException</td>
-<td class="success">0.229s</td>
+<td class="success">0.139s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenStateCodeCsvFile_whenDelimiterIncorrect_shouldReturnException</td>
-<td class="success">0.078s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -152,36 +142,9 @@
 <div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Exception in thread &quot;pool-1-thread-1&quot; java.lang.RuntimeException: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 61130704;191791 to int failed.
-	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:91)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 61130704;191791 to int failed.
-	at com.opencsv.bean.BeanFieldPrimitiveTypes.convert(BeanFieldPrimitiveTypes.java:71)
-	at com.opencsv.bean.AbstractBeanField.setFieldValue(AbstractBeanField.java:132)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.processField(ProcessCsvLine.java:140)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.processLine(ProcessCsvLine.java:126)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:82)
-	... 3 more
-Caused by: org.apache.commons.beanutils.ConversionException: Error converting from 'String' to 'Integer' For input string: &quot;61130704;191791&quot;
-	at org.apache.commons.beanutils.converters.AbstractConverter.handleError(AbstractConverter.java:282)
-	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:177)
-	at org.apache.commons.beanutils.converters.ConverterFacade.convert(ConverterFacade.java:61)
-	at org.apache.commons.beanutils.ConvertUtilsBean.convert(ConvertUtilsBean.java:491)
-	at com.opencsv.bean.BeanFieldPrimitiveTypes.convert(BeanFieldPrimitiveTypes.java:63)
-	... 7 more
-Caused by: java.lang.NumberFormatException: For input string: &quot;61130704;191791&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.&lt;init&gt;(Integer.java:1105)
-	at org.apache.commons.beanutils.converters.NumberConverter.toNumber(NumberConverter.java:433)
-	at org.apache.commons.beanutils.converters.NumberConverter.convertToType(NumberConverter.java:271)
-	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:169)
-	... 10 more
-com.censusAnalyzer.Exception.CensusAnalyzerException: Error parsing CSV line: 29, values: null
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:31)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords(CensusAnalyzerTest.java:36)
+<pre>com.censusAnalyzer.Exception.CensusAnalyzerException: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 61130704;191791 to long failed.
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:44)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords(CensusAnalyzerTest.java:37)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -230,9 +193,9 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: Error parsing CSV line: 29
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-com.censusAnalyzer.Exception.CensusAnalyzerException: Error capturing CSV header!
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadStateCodeData(CensusAnalyzer.java:44)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenStateCodeCsvFile_returnCorrectNumberOfRecord(CensusAnalyzerTest.java:87)
+com.censusAnalyzer.Exception.CensusAnalyzerException: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of AN to int failed.
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadStateCodeData(CensusAnalyzer.java:63)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenStateCodeCsvFile_returnCorrectNumberOfRecord(CensusAnalyzerTest.java:88)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -281,9 +244,9 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: Error capturing CSV header
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-com.censusAnalyzer.Exception.CensusAnalyzerException: Error capturing CSV header!
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:31)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaStateCode_whenSorted_shouldReturnSortedDataEndCode(CensusAnalyzerTest.java:173)
+com.censusAnalyzer.Exception.CensusAnalyzerException: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 61130704;191791 to long failed.
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:44)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSorted_shouldReturnSortedDataOfStartState(CensusAnalyzerTest.java:138)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -332,192 +295,9 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: Error capturing CSV header
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Exception in thread &quot;pool-2-thread-2&quot; java.lang.RuntimeException: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 61130704;191791 to int failed.
-	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:91)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 61130704;191791 to int failed.
-	at com.opencsv.bean.BeanFieldPrimitiveTypes.convert(BeanFieldPrimitiveTypes.java:71)
-	at com.opencsv.bean.AbstractBeanField.setFieldValue(AbstractBeanField.java:132)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.processField(ProcessCsvLine.java:140)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.processLine(ProcessCsvLine.java:126)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:82)
-	... 3 more
-Caused by: org.apache.commons.beanutils.ConversionException: Error converting from 'String' to 'Integer' For input string: &quot;61130704;191791&quot;
-	at org.apache.commons.beanutils.converters.AbstractConverter.handleError(AbstractConverter.java:282)
-	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:177)
-	at org.apache.commons.beanutils.converters.ConverterFacade.convert(ConverterFacade.java:61)
-	at org.apache.commons.beanutils.ConvertUtilsBean.convert(ConvertUtilsBean.java:491)
-	at com.opencsv.bean.BeanFieldPrimitiveTypes.convert(BeanFieldPrimitiveTypes.java:63)
-	... 7 more
-Caused by: java.lang.NumberFormatException: For input string: &quot;61130704;191791&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.&lt;init&gt;(Integer.java:1105)
-	at org.apache.commons.beanutils.converters.NumberConverter.toNumber(NumberConverter.java:433)
-	at org.apache.commons.beanutils.converters.NumberConverter.convertToType(NumberConverter.java:271)
-	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:169)
-	... 10 more
-Exception in thread &quot;pool-3-thread-2&quot; java.lang.RuntimeException: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 61130704;191791 to int failed.
-	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:91)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 61130704;191791 to int failed.
-	at com.opencsv.bean.BeanFieldPrimitiveTypes.convert(BeanFieldPrimitiveTypes.java:71)
-	at com.opencsv.bean.AbstractBeanField.setFieldValue(AbstractBeanField.java:132)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.processField(ProcessCsvLine.java:140)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.processLine(ProcessCsvLine.java:126)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:82)
-	... 3 more
-Caused by: org.apache.commons.beanutils.ConversionException: Error converting from 'String' to 'Integer' For input string: &quot;61130704;191791&quot;
-	at org.apache.commons.beanutils.converters.AbstractConverter.handleError(AbstractConverter.java:282)
-	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:177)
-	at org.apache.commons.beanutils.converters.ConverterFacade.convert(ConverterFacade.java:61)
-	at org.apache.commons.beanutils.ConvertUtilsBean.convert(ConvertUtilsBean.java:491)
-	at com.opencsv.bean.BeanFieldPrimitiveTypes.convert(BeanFieldPrimitiveTypes.java:63)
-	... 7 more
-Caused by: java.lang.NumberFormatException: For input string: &quot;61130704;191791&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.&lt;init&gt;(Integer.java:1105)
-	at org.apache.commons.beanutils.converters.NumberConverter.toNumber(NumberConverter.java:433)
-	at org.apache.commons.beanutils.converters.NumberConverter.convertToType(NumberConverter.java:271)
-	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:169)
-	... 10 more
-com.censusAnalyzer.Exception.CensusAnalyzerException: Error parsing CSV line: 29, values: null
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:31)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSorted_shouldReturnSortedDataEndState(CensusAnalyzerTest.java:149)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-com.censusAnalyzer.Exception.CensusAnalyzerException: Error capturing CSV header!
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:31)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaStateCode_whenSorted_shouldReturnSortedDataStartCode(CensusAnalyzerTest.java:161)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Exception in thread &quot;pool-4-thread-3&quot; java.lang.RuntimeException: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 61130704;191791 to int failed.
-	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:91)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 61130704;191791 to int failed.
-	at com.opencsv.bean.BeanFieldPrimitiveTypes.convert(BeanFieldPrimitiveTypes.java:71)
-	at com.opencsv.bean.AbstractBeanField.setFieldValue(AbstractBeanField.java:132)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.processField(ProcessCsvLine.java:140)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.processLine(ProcessCsvLine.java:126)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:82)
-	... 3 more
-Caused by: org.apache.commons.beanutils.ConversionException: Error converting from 'String' to 'Integer' For input string: &quot;61130704;191791&quot;
-	at org.apache.commons.beanutils.converters.AbstractConverter.handleError(AbstractConverter.java:282)
-	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:177)
-	at org.apache.commons.beanutils.converters.ConverterFacade.convert(ConverterFacade.java:61)
-	at org.apache.commons.beanutils.ConvertUtilsBean.convert(ConvertUtilsBean.java:491)
-	at com.opencsv.bean.BeanFieldPrimitiveTypes.convert(BeanFieldPrimitiveTypes.java:63)
-	... 7 more
-Caused by: java.lang.NumberFormatException: For input string: &quot;61130704;191791&quot;
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.&lt;init&gt;(Integer.java:1105)
-	at org.apache.commons.beanutils.converters.NumberConverter.toNumber(NumberConverter.java:433)
-	at org.apache.commons.beanutils.converters.NumberConverter.convertToType(NumberConverter.java:271)
-	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:169)
-	... 10 more
-com.censusAnalyzer.Exception.CensusAnalyzerException: Error parsing CSV line: 29, values: null
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:31)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSorted_shouldReturnSortedDataStartState(CensusAnalyzerTest.java:137)
+com.censusAnalyzer.Exception.CensusAnalyzerException: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 61130704;191791 to long failed.
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:44)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSorted_shouldReturnSortedDataOfEndState(CensusAnalyzerTest.java:150)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -577,7 +357,7 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: Error parsing CSV line: 29
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at Apr 7, 2020, 3:55:09 PM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Apr 8, 2020, 8:22:15 AM</p>
 </div>
 </div>
 </body>
