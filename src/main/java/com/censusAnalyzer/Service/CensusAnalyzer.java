@@ -2,7 +2,7 @@ package com.censusAnalyzer.Service;
 
 import com.censusAnalyzer.Builder.CsvBuilderFactory;
 import com.censusAnalyzer.Builder.IcsvBuilder;
-import com.censusAnalyzer.DTO.IndianCensusDto;
+import com.censusAnalyzer.DAO.IndianCensusDao;
 import com.censusAnalyzer.DTO.IndianStateCensusCode;
 import com.censusAnalyzer.Exception.CensusAnalyzerException;
 import com.censusAnalyzer.DTO.IndianCensusCsv;
@@ -19,8 +19,8 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 public class CensusAnalyzer {
-    Map<String, IndianCensusDto> censusMap;
-    List<IndianCensusDto> indianCensusDtoList;
+    Map<String, IndianCensusDao> censusMap;
+    List<IndianCensusDao> indianCensusDtoList;
 
     public CensusAnalyzer() {
         censusMap = new HashedMap();
@@ -33,7 +33,7 @@ public class CensusAnalyzer {
             Iterator<IndianCensusCsv> censusCsvIterator = csvBuilder.getCSVFileIterator(reader, IndianCensusCsv.class);
             while (censusCsvIterator.hasNext()) {
                 IndianCensusCsv indianCensusCsv = censusCsvIterator.next();
-                censusMap.put(indianCensusCsv.state, new IndianCensusDto(indianCensusCsv));
+                censusMap.put(indianCensusCsv.state, new IndianCensusDao(indianCensusCsv));
             }
             indianCensusDtoList = censusMap.values().stream().collect(Collectors.toList());
             return censusMap.size();
@@ -58,8 +58,8 @@ public class CensusAnalyzer {
                 throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.CSV_FILE_PROBLEM, e.getMessage());
             } catch (RuntimeException e){
                 throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.CSV_TEMPLATE_PROBLEM, e.getMessage());
+            }
         }
-    }
 
         private <E > int getCount (Iterator < E > iterator) {
             Iterable<E> csvIterable = () -> iterator;
@@ -70,17 +70,26 @@ public class CensusAnalyzer {
         public String getStateWiseSortedCensusData (String csvFilePath) throws CensusAnalyzerException {
             if (indianCensusDtoList.size() == 0 || indianCensusDtoList == null)
                 throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.NO_CENSUS_DATA, "No Data");
-            Comparator<IndianCensusDto> indiaCensusCsvComparator = Comparator.comparing(census -> census.state);
+            Comparator<IndianCensusDao> indiaCensusCsvComparator = Comparator.comparing(census -> census.state);
             this.sort(indiaCensusCsvComparator);
             String sortedCensusJson = new Gson().toJson(indianCensusDtoList);
             return sortedCensusJson;
         }
 
-        private void sort (Comparator < IndianCensusDto > indianCensusCsvComparator) {
+    public String getPopulationWiseSortedCensusData(String csvFilePath) throws CensusAnalyzerException{
+        if (indianCensusDtoList.size() == 0 || indianCensusDtoList == null)
+            throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.NO_CENSUS_DATA, "No Data");
+        Comparator<IndianCensusDao> indiaCensusCsvComparator = Comparator.comparing(census -> census.state);
+        this.sort(indiaCensusCsvComparator);
+        String sortedCensusJson = new Gson().toJson(indianCensusDtoList);
+        return sortedCensusJson;
+    }
+
+        private void sort (Comparator < IndianCensusDao > indianCensusCsvComparator) {
             for (int i = 0; i < indianCensusDtoList.size() - 1; i++) {
                 for (int j = 0; j < indianCensusDtoList.size() - i - 1; j++) {
-                    IndianCensusDto census1 = indianCensusDtoList.get(j);
-                    IndianCensusDto census2 = indianCensusDtoList.get(j + 1);
+                    IndianCensusDao census1 = indianCensusDtoList.get(j);
+                    IndianCensusDao census2 = indianCensusDtoList.get(j + 1);
                     if (indianCensusCsvComparator.compare(census1,census2)>0){
                         indianCensusDtoList.set(j,census2);
                         indianCensusDtoList.set(j+1,census1);

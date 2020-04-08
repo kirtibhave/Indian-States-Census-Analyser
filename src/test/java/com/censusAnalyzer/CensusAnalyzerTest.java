@@ -155,4 +155,15 @@ public class CensusAnalyzerTest {
         }
     }
 
+    @Test
+    public void givenIndiaCensusData_whenSorted_shouldReturnSortedStartPopulationState() {
+        try {
+            censusAnalyzer.loadCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
+            String sortedCensusData = censusAnalyzer.getPopulationWiseSortedCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
+            IndianCensusCsv[] censusCsv = new Gson().fromJson(String.valueOf(sortedCensusData), IndianCensusCsv[].class);
+            Assert.assertEquals(607688, censusCsv[0].population);
+        } catch (CensusAnalyzerException e) {
+            e.printStackTrace();
+        }
+    }
 }
