@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.censusAnalyzer.CensusAnalyzerTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-04-08T04:27:53" hostname="kirts" time="0.513">
+<testsuite name="com.censusAnalyzer.CensusAnalyzerTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-04-08T05:58:51" hostname="kirts" time="0.521">
   <properties/>
-  <testcase name="givenIndiaCensusData_whenSorted_shouldReturnSortedStartPopulationState" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.513">
-    <failure message="java.lang.AssertionError: expected:&lt;607688&gt; but was:&lt;49386799&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;607688&gt; but was:&lt;49386799&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at org.junit.Assert.assertEquals(Assert.java:631)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSorted_shouldReturnSortedStartPopulationState(CensusAnalyzerTest.java:164)
+  <testcase name="givenIndiaCensusData_whenSortedOnDensity_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.521">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;A[runachal] Pradesh&gt; but was:&lt;A[ndhra] Pradesh&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;A[runachal] Pradesh&gt; but was:&lt;A[ndhra] Pradesh&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSortedOnDensity_shouldReturnResult(CensusAnalyzerTest.java:176)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

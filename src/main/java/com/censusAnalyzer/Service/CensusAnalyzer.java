@@ -76,14 +76,23 @@ public class CensusAnalyzer {
             return sortedCensusJson;
         }
 
-    public String getPopulationWiseSortedCensusData(String csvFilePath) throws CensusAnalyzerException{
-        if (indianCensusDtoList.size() == 0 || indianCensusDtoList == null)
-            throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.NO_CENSUS_DATA, "No Data");
-        Comparator<IndianCensusDao> indiaCensusCsvComparator = Comparator.comparing(census -> census.state);
-        this.sort(indiaCensusCsvComparator);
-        String sortedCensusJson = new Gson().toJson(indianCensusDtoList);
-        return sortedCensusJson;
-    }
+        public String getPopulationWiseSortedCensusData(String csvFilePath) throws CensusAnalyzerException{
+            if (indianCensusDtoList.size() == 0 || indianCensusDtoList == null)
+                throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.NO_CENSUS_DATA, "No Census Data");
+            Comparator<IndianCensusDao> indiaCensusCsvComparator = Comparator.comparing(census -> census.state);
+            this.sort(indiaCensusCsvComparator);
+            String sortedCensusJson = new Gson().toJson(indianCensusDtoList);
+            return sortedCensusJson;
+        }
+
+        public String getDensityWiseSortedCensusData(String csvFilePath) throws CensusAnalyzerException{
+            if (indianCensusDtoList.size() == 0 || indianCensusDtoList == null)
+                throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.NO_CENSUS_DATA, "No census Data");
+            Comparator<IndianCensusDao> indiaCensusCsvComparator = Comparator.comparing(census -> census.state);
+            this.sort(indiaCensusCsvComparator);
+            String sortedCensusJson = new Gson().toJson(indianCensusDtoList);
+            return sortedCensusJson;
+        }
 
         private void sort (Comparator < IndianCensusDao > indianCensusCsvComparator) {
             for (int i = 0; i < indianCensusDtoList.size() - 1; i++) {

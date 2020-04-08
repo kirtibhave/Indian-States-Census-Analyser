@@ -132,7 +132,7 @@ public class CensusAnalyzerTest {
     }
 
     @Test
-    public void givenIndiaCensusData_whenSorted_shouldReturnSortedDataOfStartState() {
+    public void givenIndiaCensusData_whenSortedOnState_shouldReturnResult() {
         try {
             censusAnalyzer.loadCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
             String sortedCensusData = censusAnalyzer.getStateWiseSortedCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
@@ -144,7 +144,7 @@ public class CensusAnalyzerTest {
     }
 
     @Test
-    public void givenIndiaCensusData_whenSorted_shouldReturnSortedDataOfEndState() {
+    public void givenIndiaCensusData_whenSortedOnState_shouldReturnSortedData() {
         try {
             censusAnalyzer.loadCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
             String sortedCensusData = censusAnalyzer.getStateWiseSortedCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
@@ -156,12 +156,24 @@ public class CensusAnalyzerTest {
     }
 
     @Test
-    public void givenIndiaCensusData_whenSorted_shouldReturnSortedStartPopulationState() {
+    public void givenIndiaCensusData_whenSortedOnPopulation_shouldReturnResult() {
         try {
             censusAnalyzer.loadCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
             String sortedCensusData = censusAnalyzer.getPopulationWiseSortedCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
             IndianCensusCsv[] censusCsv = new Gson().fromJson(String.valueOf(sortedCensusData), IndianCensusCsv[].class);
-            Assert.assertEquals(607688, censusCsv[0].population);
+            Assert.assertEquals("Sikkim",censusCsv[0].state);
+        } catch (CensusAnalyzerException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void givenIndiaCensusData_whenSortedOnDensity_shouldReturnResult() {
+        try {
+            censusAnalyzer.loadCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
+            String sortedCensusData = censusAnalyzer.getDensityWiseSortedCensusData(INDIAN_STATE_CENSUS_CSV_PATH);
+            IndianCensusCsv[] censusCsv = new Gson().fromJson(String.valueOf(sortedCensusData),IndianCensusCsv[].class);
+            Assert.assertEquals("Arunachal Pradesh",censusCsv[0].state);
         } catch (CensusAnalyzerException e) {
             e.printStackTrace();
         }
