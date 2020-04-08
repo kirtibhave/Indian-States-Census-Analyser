@@ -2,7 +2,7 @@ package com.censusAnalyzer.DTO;
 
 import com.opencsv.bean.CsvBindByName;
 
-public class IndianCensusCsvPojo {
+public class IndianCensusCsv {
 
     @CsvBindByName(column = "State",required = true)
     public String state;
