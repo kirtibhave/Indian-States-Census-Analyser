@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.censusAnalyzer.CensusAnalyzerTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-04-08T05:58:51" hostname="kirts" time="0.521">
+<testsuite name="com.censusAnalyzer.CensusAnalyzerTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-04-09T00:48:37" hostname="kirts" time="1.322">
   <properties/>
-  <testcase name="givenIndiaCensusData_whenSortedOnDensity_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.521">
-    <failure message="org.junit.ComparisonFailure: expected:&lt;A[runachal] Pradesh&gt; but was:&lt;A[ndhra] Pradesh&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;A[runachal] Pradesh&gt; but was:&lt;A[ndhra] Pradesh&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSortedOnDensity_shouldReturnResult(CensusAnalyzerTest.java:176)
+  <testcase name="givenStateCodeCsvFile_whenCsvHeaderIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.146"/>
+  <testcase name="givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.221"/>
+  <testcase name="givenStateCodeCsvFile_WithWrongFileName_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.004"/>
+  <testcase name="givenStateCodeCsvFile_returnCorrectNumberOfRecord" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.103"/>
+  <testcase name="givenIndiaCensusData_whenSortedOnDensity_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.355"/>
+  <testcase name="givenIndiaCensusData_whenSortedOnState_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.078"/>
+  <testcase name="givenIndiaCensusData_whenSortedOnPopulation_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.104"/>
+  <testcase name="givenIndianCensusData_WithWrongFileName_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.001"/>
+  <testcase name="givenStateCensusCsvFile_whenCsvHeaderIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.093"/>
+  <testcase name="givenIndianCensusData_whenDelimiterIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.026"/>
+  <testcase name="givenIndiaCensusData_whenSortedOnArea_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.075"/>
+  <testcase name="givenStateCodeCsvFile_WithWrongFileType_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.003"/>
+  <testcase name="givenStateCodeCsvFile_whenDelimiterIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.006"/>
+  <testcase name="givenIndiaCensusData_whenSortedOnState_shouldReturnSortedData" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.078"/>
+  <testcase name="givenIndianCensusData_WithWrongFileType_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[com.censusAnalyzer.Exception.CensusAnalyzerException: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of AN to int failed.
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadStateCodeData(CensusAnalyzer.java:60)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenStateCodeCsvFile_returnCorrectNumberOfRecord(CensusAnalyzerTest.java:87)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,8 +68,5 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-</failure>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+]]></system-err>
 </testsuite>

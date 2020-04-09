@@ -79,7 +79,7 @@ public class CensusAnalyzer {
         public String getPopulationWiseSortedCensusData(String csvFilePath) throws CensusAnalyzerException{
             if (indianCensusDtoList.size() == 0 || indianCensusDtoList == null)
                 throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.NO_CENSUS_DATA, "No Census Data");
-            Comparator<IndianCensusDao> indiaCensusCsvComparator = Comparator.comparing(census -> census.state);
+            Comparator<IndianCensusDao> indiaCensusCsvComparator = Comparator.comparing(census -> census.population);
             this.sort(indiaCensusCsvComparator);
             String sortedCensusJson = new Gson().toJson(indianCensusDtoList);
             return sortedCensusJson;
@@ -88,7 +88,7 @@ public class CensusAnalyzer {
         public String getDensityWiseSortedCensusData(String csvFilePath) throws CensusAnalyzerException{
             if (indianCensusDtoList.size() == 0 || indianCensusDtoList == null)
                 throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.NO_CENSUS_DATA, "No census Data");
-            Comparator<IndianCensusDao> indiaCensusCsvComparator = Comparator.comparing(census -> census.state);
+            Comparator<IndianCensusDao> indiaCensusCsvComparator = Comparator.comparing(census -> census.densityPerSqKm);
             this.sort(indiaCensusCsvComparator);
             String sortedCensusJson = new Gson().toJson(indianCensusDtoList);
             return sortedCensusJson;
@@ -97,7 +97,7 @@ public class CensusAnalyzer {
     public String getAreaWiseSortedCensusData(String csvFilePath) throws CensusAnalyzerException{
         if (indianCensusDtoList.size() == 0 || indianCensusDtoList == null)
             throw new CensusAnalyzerException(CensusAnalyzerException.ExceptionType.NO_CENSUS_DATA, "No census Data");
-        Comparator<IndianCensusDao> indiaCensusCsvComparator = Comparator.comparing(census -> census.state);
+        Comparator<IndianCensusDao> indiaCensusCsvComparator = Comparator.comparing(census -> census.areaInSqKm);
         this.sort(indiaCensusCsvComparator);
         String sortedCensusJson = new Gson().toJson(indianCensusDtoList);
         return sortedCensusJson;
