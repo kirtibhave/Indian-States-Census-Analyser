@@ -1,7 +1,6 @@
 package com.censusAnalyzer;
 
 import com.censusAnalyzer.DTO.IndianCensusCsv;
-import com.censusAnalyzer.DTO.USCensusCsv;
 import com.censusAnalyzer.Exception.CensusAnalyzerException;
 import com.censusAnalyzer.Service.CensusAnalyzer;
 import com.google.gson.Gson;

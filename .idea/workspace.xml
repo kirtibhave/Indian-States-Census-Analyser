@@ -20,7 +20,6 @@
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.censusAnalyzer.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.censusAnalyzer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.censusAnalyzer.CensusAnalyzerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.censusAnalyzer.CensusAnalyzerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Service/CensusAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/censusAnalyzer/Service/CensusAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java" afterDir="false" />
@@ -231,22 +230,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="112" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586318386936" />
-    <state width="1323" height="228" key="GridCell.Tab.0.bottom" timestamp="1586402623282">
+    <state width="676" height="224" key="GridCell.Tab.0.bottom" timestamp="1586404390965">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="228" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586402623282" />
-    <state width="1323" height="228" key="GridCell.Tab.0.center" timestamp="1586402623282">
+    <state width="676" height="224" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586404390965" />
+    <state width="676" height="224" key="GridCell.Tab.0.center" timestamp="1586404390965">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="228" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586402623282" />
-    <state width="1323" height="228" key="GridCell.Tab.0.left" timestamp="1586402623282">
+    <state width="676" height="224" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586404390965" />
+    <state width="676" height="224" key="GridCell.Tab.0.left" timestamp="1586404390965">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="228" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586402623282" />
-    <state width="1323" height="228" key="GridCell.Tab.0.right" timestamp="1586402623282">
+    <state width="676" height="224" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586404390965" />
+    <state width="676" height="224" key="GridCell.Tab.0.right" timestamp="1586404390965">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="228" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586402623282" />
+    <state width="676" height="224" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586404390965" />
     <state width="1323" height="225" key="GridCell.Tab.1.bottom" timestamp="1586172872054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -297,12 +296,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java</url>
-          <line>36</line>
+          <line>35</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java</url>
-          <line>87</line>
+          <line>86</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -322,7 +321,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/censusAnalyzer/CensusAnalyzerTest.java</url>
-          <line>35</line>
+          <line>34</line>
           <properties class="com.censusAnalyzer.CensusAnalyzerTest" method="givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords">
             <option name="EMULATED" value="true" />
           </properties>
