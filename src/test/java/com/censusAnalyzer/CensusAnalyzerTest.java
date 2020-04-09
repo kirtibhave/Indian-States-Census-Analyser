@@ -96,7 +96,7 @@ public class CensusAnalyzerTest {
     @Test
     public void givenStateCodeCsvFile_WithWrongFileName_ShouldThrowException() {
         try {
-            censusAnalyzer.loadStateCodeData(WRONG_STATE_FILE_PATH);
+            censusAnalyzer.loadIndianCensusData(WRONG_STATE_FILE_PATH);
         } catch (CensusAnalyzerException e) {
             Assert.assertEquals(CensusAnalyzerException.ExceptionType.CSV_FILE_PROBLEM, e.type);
         }
