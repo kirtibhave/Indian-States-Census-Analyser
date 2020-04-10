@@ -1,26 +1,15 @@
 package com.censusAnalyzer.Service;
 
-import com.censusAnalyzer.Adapter.CensusAdapter;
-import com.censusAnalyzer.Builder.CsvBuilderFactory;
-import com.censusAnalyzer.Builder.IcsvBuilder;
+import com.censusAnalyzer.Adapter.CensusAdapterFactory;
 import com.censusAnalyzer.DAO.CensusDao;
-import com.censusAnalyzer.DTO.IndianStateCensusCode;
-import com.censusAnalyzer.DTO.USCensusCsv;
 import com.censusAnalyzer.Exception.CensusAnalyzerException;
-import com.censusAnalyzer.DTO.IndianCensusCsv;
 import com.google.gson.Gson;
 import org.apache.commons.collections.map.HashedMap;
-
-import java.io.IOException;
-import java.io.Reader;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.*;
 import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 
 public class CensusAnalyzer {
+    public enum Country {INDIA,US}
     Map<String, CensusDao> censusMap;
     List<CensusDao> censusDaoList;
 
@@ -28,20 +17,9 @@ public class CensusAnalyzer {
         censusMap = new HashedMap();
     }
 
-    public int loadIndianCensusData(String csvFilePath) throws CensusAnalyzerException {
-        censusMap = new CensusAdapter().loadCensusData(IndianCensusCsv.class, csvFilePath);
-        censusDaoList = censusMap.values().stream().collect(Collectors.toList());
+    public int loadCensusData(Country country,String... csvFilePath) throws CensusAnalyzerException {
+        censusMap = CensusAdapterFactory.getCensusData(country, csvFilePath);
         return censusMap.size();
-    }
-
-    public int loadUSCensusData(String csvFilePath, Class<USCensusCsv> usCensusCsvClass) throws CensusAnalyzerException {
-        return this.loadUSCensusData(csvFilePath, USCensusCsv.class);
-    }
-
-    private <E> int getCount(Iterator<E> iterator) {
-        Iterable<E> csvIterable = () -> iterator;
-        int numberOfEnteries = (int) StreamSupport.stream(csvIterable.spliterator(), false).count();
-        return numberOfEnteries;
     }
 
     public String getStateWiseSortedCensusData(String csvFilePath) throws CensusAnalyzerException {
@@ -100,9 +78,5 @@ public class CensusAnalyzer {
                 }
             }
         }
-    }
-
-    public int loadUSCensusData(String csvFilePath) throws CensusAnalyzerException {
-        return new CensusAdapter().loadCensusData(USCensusCsv.class, csvFilePath).size();
     }
 }

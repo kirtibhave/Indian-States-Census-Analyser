@@ -4,7 +4,6 @@ import com.censusAnalyzer.Exception.CensusAnalyzerException;
 import com.censusAnalyzer.Exception.CsvBuilderException;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
-import javafx.animation.ScaleTransition;
 import java.io.Reader;
 import java.util.Iterator;
 import java.util.List;
