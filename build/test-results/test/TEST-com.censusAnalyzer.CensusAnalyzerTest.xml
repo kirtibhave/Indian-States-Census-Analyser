@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.censusAnalyzer.CensusAnalyzerTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2020-04-10T04:53:12" hostname="kirts" time="0.528">
+<testsuite name="com.censusAnalyzer.CensusAnalyzerTest" tests="18" skipped="0" failures="1" errors="0" timestamp="2020-04-10T07:40:57" hostname="kirts" time="1.537">
   <properties/>
-  <testcase name="givenStateCodeCsvFile_whenCsvHeaderIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.146"/>
-  <testcase name="givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.116"/>
-  <testcase name="givenStateCodeCsvFile_WithWrongFileName_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.002"/>
-  <testcase name="givenStateCodeCsvFile_returnCorrectNumberOfRecord" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.02"/>
-  <testcase name="givenIndiaCensusData_whenSortedOnDensity_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.076"/>
-  <testcase name="givenIndiaCensusData_whenSortedOnState_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.021"/>
-  <testcase name="givenIndiaCensusData_whenSortedOnPopulation_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.039"/>
+  <testcase name="givenStateCodeCsvFile_whenCsvHeaderIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.647"/>
+  <testcase name="givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.134"/>
+  <testcase name="givenStateCodeCsvFile_WithWrongFileName_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.001"/>
+  <testcase name="givenStateCodeCsvFile_returnCorrectNumberOfRecord" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.039"/>
+  <testcase name="givenIndiaCensusData_whenSortedOnDensity_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.008"/>
+  <testcase name="givenIndiaCensusData_whenSortedOnState_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.009"/>
+  <testcase name="givenIndiaCensusData_whenSortedOnPopulation_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.009"/>
   <testcase name="givenIndianCensusData_WithWrongFileName_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.0"/>
-  <testcase name="givenStateCensusCsvFile_whenCsvHeaderIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.01"/>
-  <testcase name="givenIndianCensusData_whenDelimiterIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.001"/>
-  <testcase name="givenUsCensusData_shouldReturnCorrectData" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.007"/>
-  <testcase name="givenIndiaCensusData_whenSortedOnArea_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.031"/>
-  <testcase name="givenStateCodeCsvFile_WithWrongFileType_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.001"/>
-  <testcase name="givenStateCodeCsvFile_whenDelimiterIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.001"/>
-  <testcase name="givenUsCensusData_whenSorted_shouldReturnLastResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.006"/>
-  <testcase name="givenIndiaCensusData_whenSortedOnState_shouldReturnSortedData" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.014"/>
-  <testcase name="givenIndianCensusData_WithWrongFileType_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.003"/>
-  <testcase name="givenUsCensusData_whenSorted_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.022"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[com.censusAnalyzer.Exception.CensusAnalyzerException
-	at com.censusAnalyzer.Adapter.CensusAdapter.loadCensusData(CensusAdapter.java:43)
-	at com.censusAnalyzer.Adapter.IndiaCensusAdaptor.loadCensusData(IndiaCensusAdaptor.java:26)
-	at com.censusAnalyzer.Adapter.CensusAdapterFactory.getCensusData(CensusAdapterFactory.java:12)
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:21)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords(CensusAnalyzerTest.java:39)
+  <testcase name="givenIndianCensusData_whenDelimiterIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.161"/>
+  <testcase name="givenUsCensusData_shouldReturnCorrectData" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.051"/>
+  <testcase name="givenIndiaCensusData_whenSortedOnArea_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.049"/>
+  <testcase name="givenIndianCensusData_whenCsvHeaderIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.005"/>
+  <testcase name="givenStateCodeCsvFile_WithWrongFileType_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.038">
+    <failure message="java.lang.AssertionError: expected:&lt;CSV_FILE_PROBLEM&gt; but was:&lt;CSV_TEMPLATE_PROBLEM&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;CSV_FILE_PROBLEM&gt; but was:&lt;CSV_TEMPLATE_PROBLEM&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenStateCodeCsvFile_WithWrongFileType_ShouldThrowException(CensusAnalyzerTest.java:120)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -34,7 +28,67 @@
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</failure>
+  </testcase>
+  <testcase name="givenStateCodeCsvFile_whenDelimiterIncorrect_shouldReturnException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.26"/>
+  <testcase name="givenUsCensusData_whenSorted_shouldReturnLastResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.057"/>
+  <testcase name="givenIndiaCensusData_whenSortedOnState_shouldReturnSortedData" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.013"/>
+  <testcase name="givenIndianCensusData_WithWrongFileType_ShouldThrowException" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.001"/>
+  <testcase name="givenUsCensusData_whenSorted_shouldReturnResult" classname="com.censusAnalyzer.CensusAnalyzerTest" time="0.023"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[com.censusAnalyzer.Exception.CensusAnalyzerException: java.lang.InstantiationException: com.censusAnalyzer.DTO.IndianCensusCsv
+	at com.censusAnalyzer.Adapter.CensusAdapter.loadCensusData(CensusAdapter.java:43)
+	at com.censusAnalyzer.Adapter.IndiaCensusAdaptor.loadCensusData(IndiaCensusAdaptor.java:26)
+	at com.censusAnalyzer.Adapter.CensusAdapterFactory.getCensusData(CensusAdapterFactory.java:12)
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:27)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenIndianCensusCSVFile_ShouldReturnsExactCountOfRecords(CensusAnalyzerTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
@@ -78,8 +132,8 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: Error capturing CSV header
 	at com.censusAnalyzer.Adapter.CensusAdapter.loadCensusData(CensusAdapter.java:43)
 	at com.censusAnalyzer.Adapter.IndiaCensusAdaptor.loadCensusData(IndiaCensusAdaptor.java:26)
 	at com.censusAnalyzer.Adapter.CensusAdapterFactory.getCensusData(CensusAdapterFactory.java:12)
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:21)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenStateCodeCsvFile_returnCorrectNumberOfRecord(CensusAnalyzerTest.java:90)
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:27)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenStateCodeCsvFile_returnCorrectNumberOfRecord(CensusAnalyzerTest.java:95)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,7 +142,6 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: Error capturing CSV header
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
@@ -128,12 +181,12 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: Error capturing CSV header
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-com.censusAnalyzer.Exception.CensusAnalyzerException
+com.censusAnalyzer.Exception.CensusAnalyzerException: java.lang.InstantiationException: com.censusAnalyzer.DTO.IndianCensusCsv
 	at com.censusAnalyzer.Adapter.CensusAdapter.loadCensusData(CensusAdapter.java:43)
 	at com.censusAnalyzer.Adapter.IndiaCensusAdaptor.loadCensusData(IndiaCensusAdaptor.java:26)
 	at com.censusAnalyzer.Adapter.CensusAdapterFactory.getCensusData(CensusAdapterFactory.java:12)
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:21)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSortedOnDensity_shouldReturnResult(CensusAnalyzerTest.java:176)
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:27)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSortedOnDensity_shouldReturnResult(CensusAnalyzerTest.java:189)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -142,7 +195,6 @@ com.censusAnalyzer.Exception.CensusAnalyzerException
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
@@ -182,12 +234,12 @@ com.censusAnalyzer.Exception.CensusAnalyzerException
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-com.censusAnalyzer.Exception.CensusAnalyzerException
+com.censusAnalyzer.Exception.CensusAnalyzerException: java.lang.InstantiationException: com.censusAnalyzer.DTO.IndianCensusCsv
 	at com.censusAnalyzer.Adapter.CensusAdapter.loadCensusData(CensusAdapter.java:43)
 	at com.censusAnalyzer.Adapter.IndiaCensusAdaptor.loadCensusData(IndiaCensusAdaptor.java:26)
 	at com.censusAnalyzer.Adapter.CensusAdapterFactory.getCensusData(CensusAdapterFactory.java:12)
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:21)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSortedOnState_shouldReturnResult(CensusAnalyzerTest.java:140)
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:27)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSortedOnState_shouldReturnResult(CensusAnalyzerTest.java:150)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -196,7 +248,6 @@ com.censusAnalyzer.Exception.CensusAnalyzerException
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
@@ -236,12 +287,12 @@ com.censusAnalyzer.Exception.CensusAnalyzerException
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-com.censusAnalyzer.Exception.CensusAnalyzerException
+com.censusAnalyzer.Exception.CensusAnalyzerException: java.lang.InstantiationException: com.censusAnalyzer.DTO.IndianCensusCsv
 	at com.censusAnalyzer.Adapter.CensusAdapter.loadCensusData(CensusAdapter.java:43)
 	at com.censusAnalyzer.Adapter.IndiaCensusAdaptor.loadCensusData(IndiaCensusAdaptor.java:26)
 	at com.censusAnalyzer.Adapter.CensusAdapterFactory.getCensusData(CensusAdapterFactory.java:12)
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:21)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSortedOnPopulation_shouldReturnResult(CensusAnalyzerTest.java:164)
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:27)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSortedOnPopulation_shouldReturnResult(CensusAnalyzerTest.java:176)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -250,7 +301,6 @@ com.censusAnalyzer.Exception.CensusAnalyzerException
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
@@ -294,8 +344,8 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: C:\Users\Lenovo\IdeaProjec
 	at com.censusAnalyzer.Adapter.CensusAdapter.loadCensusData(CensusAdapter.java:41)
 	at com.censusAnalyzer.Adapter.UsCensusAdapter.loadCensusData(UsCensusAdapter.java:14)
 	at com.censusAnalyzer.Adapter.CensusAdapterFactory.getCensusData(CensusAdapterFactory.java:14)
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:21)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenUsCensusData_shouldReturnCorrectData(CensusAnalyzerTest.java:200)
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:27)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenUsCensusData_shouldReturnCorrectData(CensusAnalyzerTest.java:215)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -304,7 +354,6 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: C:\Users\Lenovo\IdeaProjec
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
@@ -344,12 +393,12 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: C:\Users\Lenovo\IdeaProjec
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-com.censusAnalyzer.Exception.CensusAnalyzerException
+com.censusAnalyzer.Exception.CensusAnalyzerException: java.lang.InstantiationException: com.censusAnalyzer.DTO.IndianCensusCsv
 	at com.censusAnalyzer.Adapter.CensusAdapter.loadCensusData(CensusAdapter.java:43)
 	at com.censusAnalyzer.Adapter.IndiaCensusAdaptor.loadCensusData(IndiaCensusAdaptor.java:26)
 	at com.censusAnalyzer.Adapter.CensusAdapterFactory.getCensusData(CensusAdapterFactory.java:12)
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:21)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSortedOnArea_shouldReturnResult(CensusAnalyzerTest.java:188)
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:27)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSortedOnArea_shouldReturnResult(CensusAnalyzerTest.java:202)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -358,7 +407,6 @@ com.censusAnalyzer.Exception.CensusAnalyzerException
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
@@ -402,8 +450,8 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: C:\Users\Lenovo\IdeaProjec
 	at com.censusAnalyzer.Adapter.CensusAdapter.loadCensusData(CensusAdapter.java:41)
 	at com.censusAnalyzer.Adapter.UsCensusAdapter.loadCensusData(UsCensusAdapter.java:14)
 	at com.censusAnalyzer.Adapter.CensusAdapterFactory.getCensusData(CensusAdapterFactory.java:14)
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:21)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenUsCensusData_whenSorted_shouldReturnLastResult(CensusAnalyzerTest.java:224)
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:27)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenUsCensusData_whenSorted_shouldReturnLastResult(CensusAnalyzerTest.java:241)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -412,7 +460,6 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: C:\Users\Lenovo\IdeaProjec
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
@@ -452,12 +499,12 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: C:\Users\Lenovo\IdeaProjec
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-com.censusAnalyzer.Exception.CensusAnalyzerException
+com.censusAnalyzer.Exception.CensusAnalyzerException: java.lang.InstantiationException: com.censusAnalyzer.DTO.IndianCensusCsv
 	at com.censusAnalyzer.Adapter.CensusAdapter.loadCensusData(CensusAdapter.java:43)
 	at com.censusAnalyzer.Adapter.IndiaCensusAdaptor.loadCensusData(IndiaCensusAdaptor.java:26)
 	at com.censusAnalyzer.Adapter.CensusAdapterFactory.getCensusData(CensusAdapterFactory.java:12)
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:21)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSortedOnState_shouldReturnSortedData(CensusAnalyzerTest.java:152)
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:27)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenIndiaCensusData_whenSortedOnState_shouldReturnSortedData(CensusAnalyzerTest.java:163)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -466,7 +513,6 @@ com.censusAnalyzer.Exception.CensusAnalyzerException
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
@@ -510,8 +556,8 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: C:\Users\Lenovo\IdeaProjec
 	at com.censusAnalyzer.Adapter.CensusAdapter.loadCensusData(CensusAdapter.java:41)
 	at com.censusAnalyzer.Adapter.UsCensusAdapter.loadCensusData(UsCensusAdapter.java:14)
 	at com.censusAnalyzer.Adapter.CensusAdapterFactory.getCensusData(CensusAdapterFactory.java:14)
-	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:21)
-	at com.censusAnalyzer.CensusAnalyzerTest.givenUsCensusData_whenSorted_shouldReturnResult(CensusAnalyzerTest.java:210)
+	at com.censusAnalyzer.Service.CensusAnalyzer.loadCensusData(CensusAnalyzer.java:27)
+	at com.censusAnalyzer.CensusAnalyzerTest.givenUsCensusData_whenSorted_shouldReturnResult(CensusAnalyzerTest.java:226)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -520,7 +566,6 @@ com.censusAnalyzer.Exception.CensusAnalyzerException: C:\Users\Lenovo\IdeaProjec
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)

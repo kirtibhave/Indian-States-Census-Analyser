@@ -20,6 +20,17 @@ public class USCensusCsv {
     @CsvBindByName(column = "Housing Density")
     public double housingDensity;
 
+    public USCensusCsv(String stateId, String state, double population, double housingUnit, double totalArea) {
+        this.stateId = stateId;
+        this.state = state;
+        this.population = population;
+        this.housingUnit = housingUnit;
+        this.totalArea = totalArea;
+        this.landArea = landArea;
+        this.populationDensity = populationDensity;
+        this.housingDensity = housingDensity;
+    }
+
     @Override
     public String toString() {
         return "UsCensusCsv{" +
